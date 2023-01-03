@@ -16,7 +16,7 @@ $ yarn add marvel-snap-deckstrings
 import { encode, decode } from "marvel-snap-deckstrings";
 
 const deck = {
-    cards: ["ProfessorX", "JessicaJones", "AmericaChavez", "Enchantress"], // dbfId[]
+  cards: ["ProfessorX", "JessicaJones", "AmericaChavez", "Enchantress"], // dbfId[]
 };
 
 const deckstring = encode(deck);
