@@ -1,0 +1,32 @@
+{
+  "name": "marvel-snap-deckstrings",
+  "version": "0.0.2",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "author": "Bahk Chanhee <bach@hey.com>",
+  "homepage": "https://github.com/9j/marvel-snap-deckstrings#readme",
+  "repository": "https://github.com/9j/marvel-snap-deckstrings",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup index.ts --format esm,cjs --dts --clean",
+    "dev": "npm run build --watch",
+    "lint": "TIMING=1 eslint \"**/*.ts*\""
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.20",
+    "eslint": "^8.28.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "universal-base64": "^2.1.0"
+  }
+}
